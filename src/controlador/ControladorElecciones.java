@@ -166,27 +166,27 @@ public class ControladorElecciones implements ActionListener {
     }
 
     private void registrarMascota() {
-        Mascota m1 = new Mascota("1", "pepe", "Macho", "4", "Grande y feo", Tipo.ACUATICO);
+        Mascota m1 = new Mascota("1", "Pepe", "Macho", "4", "Grande y rápido", Tipo.ACUATICO);
         listaMascotas.add(m1);
-        Mascota m2 = new Mascota("2", "pepa", "Hembra", "17", "Prosti", Tipo.TERRESTRE);
+        Mascota m2 = new Mascota("2", "Pepa", "Hembra", "17", "Peluda y salvaje", Tipo.TERRESTRE);
         listaMascotas.add(m2);
     }
 
     private void registrarCanPersos() {
-        Personero p1 = new Personero(listaMascotas.get(0), "Andrés", "López", 11, "A", "Algún lema", 46, 0);
+        Personero p1 = new Personero(listaMascotas.get(0), "Andrés", "López", 11, "A", "Por una comunidad educativa mejor", 46, 0);
         listaCandidatos.add(p1);
         this.frmElecciones.cmbPersos.addItem(p1.getNombre() + " " + p1.getApellido());
-        Personero p2 = new Personero(listaMascotas.get(1), "Carlos", "Ospina", 11, "B", "Otro lema", 47, 0);
+        Personero p2 = new Personero(listaMascotas.get(1), "Carlos", "Ospina", 11, "B", "Por el bien de los compañeros", 47, 0);
         listaCandidatos.add(p2);
         this.frmElecciones.cmbPersos.addItem(p2.getNombre() + " " + p2.getApellido());
         this.frmElecciones.cmbPersos.addItem("VOTO EN BLANCO");
     }
 
     private void registrarCanRepres() {
-        Representante r1 = new Representante(listaEstudiantes.get(0), "Ian", "Carrillo", 2, "A", "Firmes por la paja", 01, 0);
+        Representante r1 = new Representante(listaEstudiantes.get(0), "Ian", "Carrillo", 2, "A", "Todo en pro de el futuro del país", 01, 0);
         listaCandidatos.add(r1);
         this.frmElecciones.cmbRepres.addItem(r1.getNombre() + " " + r1.getApellido());
-        Representante r2 = new Representante(listaEstudiantes.get(1), "Fabian", "Diaz", 3, "B", "Firmes por la patria", 02, 0);
+        Representante r2 = new Representante(listaEstudiantes.get(1), "Fabian", "Diaz", 3, "B", "Buenos estudiantes, nueva comunidad", 02, 0);
         listaCandidatos.add(r2);
         this.frmElecciones.cmbRepres.addItem(r2.getNombre() + " " + r2.getApellido());
         this.frmElecciones.cmbRepres.addItem("VOTO EN BLANCO");
